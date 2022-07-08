@@ -1,0 +1,25 @@
+Adicionando o jar local (modelmapper) ao Maven
+
+mvn install:install-file -Dfile=C:/Fontes/FontesIntellij/pagamentos/others/modelmapper/modelmapper-3.1.0.jar -DgroupId=org.wm.modelmapper -DartifactId=modelmapper -Dversion=3.1.0 -Dpackaging=jar -DgeneratePom=true
+
+org.wm.modelmapper
+modelmaper
+3.1.0
+
+<dependency>
+	<groupId>org.wm.modelmapper</groupId>
+	<artifactId>modelmapper</artifactId>
+	<version>3.1.0</version>
+</dependency>
+
+-------
+
+Outra opção
+
+<dependency>
+	<groupId>br.wm.modelmapper</groupId>
+	<artifactId>modelmapper</artifactId>
+	<version>3.1.0</version>
+	<scope>system</scope>
+	<systemPath>${basedir}/others/modelmapper/modelmapper-3.1.0.jar</systemPath>
+</dependency>

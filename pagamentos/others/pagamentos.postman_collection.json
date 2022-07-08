@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "e8d6306e-0ba5-40be-98da-e0242c45eb67",
+		"name": "pagamentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET pagamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pagamentos-ms/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pagamentos-ms",
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST pagamentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": 500,\r\n    \"nome\": \"William\",\r\n    \"numero\": \"12345678\",\r\n    \"expiracao\": \"10/29\",\r\n    \"codigo\": \"123\",\r\n    \"pedidoId\": 1,\r\n    \"formaDePagamentoId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pagamentos id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pagamentos-ms/pagamentos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pagamentos-ms",
+						"pagamentos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE pagamentos id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pagamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT pagamentos id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": 500,\r\n    \"nome\": \"José\",\r\n    \"numero\": \"12345678\",\r\n    \"expiracao\": \"10/29\",\r\n    \"codigo\": \"123\",\r\n    \"status\": \"CRIADO\",\r\n    \"pedidoId\": 1,\r\n    \"formaDePagamentoId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pagamentos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pagamentos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET pagamentos eureka",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://host.docker.internal:64775/pagamentos",
+					"protocol": "http",
+					"host": [
+						"host",
+						"docker",
+						"internal"
+					],
+					"port": "64775",
+					"path": [
+						"pagamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATH confirmar pagamento",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/pagamentos-ms/pagamentos/2/confirmar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pagamentos-ms",
+						"pagamentos",
+						"2",
+						"confirmar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

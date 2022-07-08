@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "e856d1b1-e427-410a-8f88-83ffd367ff16",
+		"name": "pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST pedidos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itens\": [\r\n    {\r\n        \"quantidade\": 10,\r\n        \"descricao\": \"Coca-cola\"\r\n    },\r\n    {\r\n        \"quantidade\": 5,\r\n        \"descricao\": \"Mc Chicken\"\r\n    }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/pedidos-ms/pedidos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pedidos-ms",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
